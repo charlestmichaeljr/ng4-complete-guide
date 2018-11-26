@@ -1,0 +1,7 @@
+.successClass {
+  color: darkgreen;
+  background-color: lightgreen;
+  margin: 10px;
+  padding: 15px;
+  border: solid green 2px;
+}
