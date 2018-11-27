@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="toggleDetails()">Display Details</button>
+<p *ngIf="showDetails">{{detailPhrase}}</p>
+<div class="container">
+  <div class="row" *ngFor="let logRow of clickLog; index as i"
+       [ngStyle]="{backgroundColor: i>=4 ? 'blue': 'transparent'}"
+        [ngClass]="{whiteBack: i>=4}">
+    <div  class="col-md-6">{{logRow.date}}</div>
+    <div class="col-md-6">{{logRow.status}}</div>
+  </div>
+</div>
